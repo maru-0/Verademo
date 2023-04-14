@@ -44,7 +44,7 @@ public class IgnoreCommand implements BlabberCommand {
 			String event = username + " is now ignoring " + blabberUsername + "(" + result.getString(1) + ")";
 			sqlQuery = "INSERT INTO users_history (blabber, event) VALUES (\"" + username + "\", \"" + event + "\")";
 			logger.info(sqlQuery);
-			sqlStatement.execute(sqlQuery);//teste
+			sqlStatement.execute(sqlQuery);//testea
 			/* END BAD CODE*/
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
